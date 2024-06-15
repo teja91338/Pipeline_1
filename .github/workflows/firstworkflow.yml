@@ -3,7 +3,7 @@ name: first pipeline workflow
 on: push
 
      jobs: 
-       first_job:
+         first_job:
             runs-on: ubuntu-latest
             steps:
             - name: welcome message
