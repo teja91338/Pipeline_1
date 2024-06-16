@@ -1,16 +1,18 @@
- name: first pipeline workflow
+name: first pipeline workflow
 
- on: push
- 
-    jobs:  
+on: 
+  push:
 
-        first_job:
-            runs-on: ubuntu-latest
-                steps:
-                    - name: first step
-                      run: echo "firststep"
-                    - name: second step
-                      run: mkdir second step
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "firststep"
+      
+      - name: second step
+        run: mkdir second_step
+
                     
  
 
