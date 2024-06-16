@@ -1,0 +1,13 @@
+name: first pipeline workflow
+
+on: push:
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "firststep"
+      
+      - name: second step
+        run: mkdir second_step
