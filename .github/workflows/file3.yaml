@@ -1,6 +1,6 @@
 name: first pipeline workflow
 
-on: push:
+on: push
 
 jobs:
   first_job:
