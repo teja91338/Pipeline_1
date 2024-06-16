@@ -1,19 +1,16 @@
-                                name: first pipeline workflow
+ name: first pipeline workflow
 
-                                on: push
+ on: push
 
-                                jobs:
-                                    first_job:
-                                    runs-on: ubuntu-latest
-                                        steps:
-                                        - name: welcome message
-                                        run: echo "my first GitHub Actions Job"
+    jobs:  
 
-                                        - name: Checkout Repo
-                                        uses: actions/checkout@v2
+        first_job:
+            runs-on: ubuntu-latest
+                steps:
+                    - name: first step
+                      run: echo "firststep"
+                    - name: second step
+                      run: mkdir second step
+                    
+ 
 
-                                        - name: list files
-                                        run: ls -ltra
-                                        
-                                        - name: Read file
-                                        run: cat README.md
